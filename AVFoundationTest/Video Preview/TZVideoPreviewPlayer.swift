@@ -19,7 +19,8 @@ class TZVideoPreviewPlayer: UIViewController {
     @IBOutlet private weak var saveButton: UIButton!
     @IBOutlet private weak var cancelButton: UIButton!
     
-    private let player = AVPlayer()
+    @objc dynamic private let player = AVPlayer()
+    
     open var fileLocation : URL! {
         didSet {
             // try to get asset from the file location
@@ -44,8 +45,18 @@ class TZVideoPreviewPlayer: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.videoPreview.playerLayer.player = player
         
+        addObserver(self, forKeyPath: "player.currentItem.status", options: .new, context: nil)
+        addObserver(self, forKeyPath: "player.rate", options: [.new, .initial], context: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(playerReachedEnd(notification:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+        
+        self.videoPreview.playerLayer.player = player
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        removeObserver(self, forKeyPath: "player.currentItem.status", context: nil)
+        removeObserver(self, forKeyPath: "player.rate", context: nil)
     }
     
     @IBAction private func saveButtonPressed(){
@@ -57,7 +68,7 @@ class TZVideoPreviewPlayer: UIViewController {
                 print("Success")
                 
             } else {
-                print(error)
+                print(error!)
             }
         }
     }
@@ -85,6 +96,18 @@ class TZVideoPreviewPlayer: UIViewController {
             DispatchQueue.main.async {
                 self.playerItem = AVPlayerItem(asset: asset)
             }
+        }
+    }
+    
+    @objc func playerReachedEnd(notification:NSNotification) {
+        //To restart video
+        self.asset = AVURLAsset(url: self.fileLocation!)
+        self.player.play()
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "player.currentItem.status" {
+            self.player.play()
         }
     }
 }

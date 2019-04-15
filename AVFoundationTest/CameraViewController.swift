@@ -58,10 +58,28 @@ extension CameraViewController: AVCaptureFileOutputRecordingDelegate {
         print("Finished Recording. Output file : \(outputFileURL)")
         self.recordButton.setImage(UIImage(named: "record"), for: .normal)
         
-        let preview = TZVideoPreviewPlayer()
-        preview.fileLocation = outputFileURL
-        self.present(preview, animated: true, completion: nil)
+        // Add watermark
+        let editor = WatermarkEditor(fileUrl: outputFileURL)
+        editor.export { (success, fileUrl) in
+            if success {
+                DispatchQueue.main.async {
+                    let preview = TZVideoPreviewPlayer()
+                    preview.fileLocation = fileUrl
+                    self.present(preview, animated: true, completion: nil)
+//                    let controller = UIActivityViewController.init(activityItems: [fileUrl!],
+//                                                                   applicationActivities: nil)
+//
+//                    self.present(controller, animated: true, completion: nil)
+//                    if let popOver = controller.popoverPresentationController {
+//                        popOver.sourceView = self.view
+//                    }
+                }
+                
+            } else {
+                let preview = TZVideoPreviewPlayer()
+                preview.fileLocation = outputFileURL
+                self.present(preview, animated: true, completion: nil)
+            }
+        }
     }
-    
-    
 }

@@ -11,6 +11,7 @@
 		465EB3C4225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465EB3C2225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib */; };
 		465EB3C6225E3BCA00DE50E7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EB3C5225E3BCA00DE50E7 /* PlayerView.swift */; };
 		465EB3C82264A5DC00DE50E7 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EB3C72264A5DC00DE50E7 /* Camera.swift */; };
+		465EB3CA2264D11400DE50E7 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EB3C92264D11400DE50E7 /* Editor.swift */; };
 		467C7F64225B6EB7006F8455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F63225B6EB7006F8455 /* AppDelegate.swift */; };
 		467C7F69225B6EB7006F8455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F67225B6EB7006F8455 /* Main.storyboard */; };
 		467C7F6B225B6EB9006F8455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F6A225B6EB9006F8455 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		465EB3C2225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TZVideoPreviewPlayer.xib; sourceTree = "<group>"; };
 		465EB3C5225E3BCA00DE50E7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		465EB3C72264A5DC00DE50E7 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = Camera/Camera.swift; sourceTree = "<group>"; };
+		465EB3C92264D11400DE50E7 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Editor.swift; path = Camera/Editor.swift; sourceTree = "<group>"; };
 		467C7F60225B6EB7006F8455 /* AVFoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467C7F63225B6EB7006F8455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467C7F68225B6EB7006F8455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				467C7F82225CD39A006F8455 /* CameraViewController.swift */,
 				467C7F83225CD39A006F8455 /* CameraViewController.xib */,
 				465EB3C72264A5DC00DE50E7 /* Camera.swift */,
+				465EB3C92264D11400DE50E7 /* Editor.swift */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				467C7F64225B6EB7006F8455 /* AppDelegate.swift in Sources */,
 				467C7F84225CD39A006F8455 /* CameraViewController.swift in Sources */,
 				465EB3C6225E3BCA00DE50E7 /* PlayerView.swift in Sources */,
+				465EB3CA2264D11400DE50E7 /* Editor.swift in Sources */,
 				467C7F7F225BB26C006F8455 /* TZAudioPlayer.swift in Sources */,
 				465EB3C3225E3A6700DE50E7 /* TZVideoPreviewPlayer.swift in Sources */,
 				467C7F78225B774D006F8455 /* AudioViewController.swift in Sources */,

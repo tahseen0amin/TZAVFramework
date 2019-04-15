@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="AVFoundationTest" customModuleProvider="target">
+            <connections>
+                <outlet property="preview" destination="jpa-iD-IH8" id="d7w-i8-vG5"/>
+                <outlet property="recordButton" destination="OZC-pN-q2I" id="N7E-3f-e4b"/>
+                <outlet property="toggleButton" destination="QdR-zQ-xN6" id="gkf-LE-Tm2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpa-iD-IH8" userLabel="Camera Preview">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZC-pN-q2I" userLabel="Record Button">
+                    <rect key="frame" x="182" y="792" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Hkd-Ld-EBv"/>
+                        <constraint firstAttribute="height" constant="50" id="JVQ-rH-c43"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="record"/>
+                    <connections>
+                        <action selector="recordButtonPressed" destination="-1" eventType="touchUpInside" id="tFh-A1-NOR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdR-zQ-xN6" userLabel="Toggle Button">
+                    <rect key="frame" x="327" y="64" width="47" height="30"/>
+                    <state key="normal" title="Toggle"/>
+                    <connections>
+                        <action selector="toggleButtonPressed" destination="-1" eventType="touchUpInside" id="xTx-ze-P1H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OZC-pN-q2I" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1mg-vC-NBe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OZC-pN-q2I" secondAttribute="bottom" constant="20" id="Alv-XK-2sC"/>
+                <constraint firstItem="jpa-iD-IH8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q1y-Av-cTK"/>
+                <constraint firstAttribute="bottom" secondItem="jpa-iD-IH8" secondAttribute="bottom" id="TcY-bL-Axx"/>
+                <constraint firstItem="jpa-iD-IH8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UsF-bY-GKa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QdR-zQ-xN6" secondAttribute="trailing" constant="40" id="abE-OZ-z8H"/>
+                <constraint firstItem="QdR-zQ-xN6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="bfe-ik-f6z"/>
+                <constraint firstAttribute="trailing" secondItem="jpa-iD-IH8" secondAttribute="trailing" id="jzT-BQ-cpz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="record" width="57" height="57"/>
+    </resources>
+</document>

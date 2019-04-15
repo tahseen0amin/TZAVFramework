@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465EB3C3225E3A6700DE50E7 /* TZVideoPreviewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EB3C1225E3A6700DE50E7 /* TZVideoPreviewPlayer.swift */; };
+		465EB3C4225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465EB3C2225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib */; };
+		465EB3C6225E3BCA00DE50E7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EB3C5225E3BCA00DE50E7 /* PlayerView.swift */; };
+		465EB3C82264A5DC00DE50E7 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EB3C72264A5DC00DE50E7 /* Camera.swift */; };
 		467C7F64225B6EB7006F8455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F63225B6EB7006F8455 /* AppDelegate.swift */; };
-		467C7F66225B6EB7006F8455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F65225B6EB7006F8455 /* ViewController.swift */; };
 		467C7F69225B6EB7006F8455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F67225B6EB7006F8455 /* Main.storyboard */; };
 		467C7F6B225B6EB9006F8455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F6A225B6EB9006F8455 /* Assets.xcassets */; };
 		467C7F6E225B6EB9006F8455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F6C225B6EB9006F8455 /* LaunchScreen.storyboard */; };
+		467C7F78225B774D006F8455 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F76225B774D006F8455 /* AudioViewController.swift */; };
+		467C7F79225B774D006F8455 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F77225B774D006F8455 /* AudioViewController.xib */; };
+		467C7F7C225BACAA006F8455 /* TZRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F7B225BACAA006F8455 /* TZRecorder.swift */; };
+		467C7F7F225BB26C006F8455 /* TZAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F7E225BB26C006F8455 /* TZAudioPlayer.swift */; };
+		467C7F84225CD39A006F8455 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7F82225CD39A006F8455 /* CameraViewController.swift */; };
+		467C7F85225CD39A006F8455 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467C7F83225CD39A006F8455 /* CameraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		465EB3C1225E3A6700DE50E7 /* TZVideoPreviewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZVideoPreviewPlayer.swift; sourceTree = "<group>"; };
+		465EB3C2225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TZVideoPreviewPlayer.xib; sourceTree = "<group>"; };
+		465EB3C5225E3BCA00DE50E7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		465EB3C72264A5DC00DE50E7 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = Camera/Camera.swift; sourceTree = "<group>"; };
 		467C7F60225B6EB7006F8455 /* AVFoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467C7F63225B6EB7006F8455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		467C7F65225B6EB7006F8455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		467C7F68225B6EB7006F8455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		467C7F6A225B6EB9006F8455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467C7F6D225B6EB9006F8455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467C7F6F225B6EB9006F8455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467C7F76225B774D006F8455 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		467C7F77225B774D006F8455 /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
+		467C7F7B225BACAA006F8455 /* TZRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZRecorder.swift; sourceTree = "<group>"; };
+		467C7F7E225BB26C006F8455 /* TZAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZAudioPlayer.swift; sourceTree = "<group>"; };
+		467C7F82225CD39A006F8455 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		467C7F83225CD39A006F8455 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		465EB3C0225E3A0E00DE50E7 /* Video Preview */ = {
+			isa = PBXGroup;
+			children = (
+				465EB3C1225E3A6700DE50E7 /* TZVideoPreviewPlayer.swift */,
+				465EB3C2225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib */,
+				465EB3C5225E3BCA00DE50E7 /* PlayerView.swift */,
+			);
+			path = "Video Preview";
+			sourceTree = "<group>";
+		};
 		467C7F57225B6EB7006F8455 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +82,63 @@
 		467C7F62225B6EB7006F8455 /* AVFoundationTest */ = {
 			isa = PBXGroup;
 			children = (
+				467C7F75225B728E006F8455 /* Classes */,
 				467C7F63225B6EB7006F8455 /* AppDelegate.swift */,
-				467C7F65225B6EB7006F8455 /* ViewController.swift */,
 				467C7F67225B6EB7006F8455 /* Main.storyboard */,
 				467C7F6A225B6EB9006F8455 /* Assets.xcassets */,
 				467C7F6C225B6EB9006F8455 /* LaunchScreen.storyboard */,
 				467C7F6F225B6EB9006F8455 /* Info.plist */,
 			);
 			path = AVFoundationTest;
+			sourceTree = "<group>";
+		};
+		467C7F75225B728E006F8455 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				465EB3C0225E3A0E00DE50E7 /* Video Preview */,
+				467C7F81225CD377006F8455 /* Camera */,
+				467C7F80225CCF6B006F8455 /* Audio */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		467C7F7A225BAC91006F8455 /* Audio Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				467C7F7B225BACAA006F8455 /* TZRecorder.swift */,
+			);
+			name = "Audio Recorder";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		467C7F7D225BB257006F8455 /* Audio Player */ = {
+			isa = PBXGroup;
+			children = (
+				467C7F7E225BB26C006F8455 /* TZAudioPlayer.swift */,
+			);
+			name = "Audio Player";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		467C7F80225CCF6B006F8455 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				467C7F76225B774D006F8455 /* AudioViewController.swift */,
+				467C7F77225B774D006F8455 /* AudioViewController.xib */,
+				467C7F7A225BAC91006F8455 /* Audio Recorder */,
+				467C7F7D225BB257006F8455 /* Audio Player */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		467C7F81225CD377006F8455 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				467C7F82225CD39A006F8455 /* CameraViewController.swift */,
+				467C7F83225CD39A006F8455 /* CameraViewController.xib */,
+				465EB3C72264A5DC00DE50E7 /* Camera.swift */,
+			);
+			name = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				467C7F6E225B6EB9006F8455 /* LaunchScreen.storyboard in Resources */,
+				467C7F79225B774D006F8455 /* AudioViewController.xib in Resources */,
 				467C7F6B225B6EB9006F8455 /* Assets.xcassets in Resources */,
 				467C7F69225B6EB7006F8455 /* Main.storyboard in Resources */,
+				467C7F85225CD39A006F8455 /* CameraViewController.xib in Resources */,
+				465EB3C4225E3A6700DE50E7 /* TZVideoPreviewPlayer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467C7F66225B6EB7006F8455 /* ViewController.swift in Sources */,
+				465EB3C82264A5DC00DE50E7 /* Camera.swift in Sources */,
 				467C7F64225B6EB7006F8455 /* AppDelegate.swift in Sources */,
+				467C7F84225CD39A006F8455 /* CameraViewController.swift in Sources */,
+				465EB3C6225E3BCA00DE50E7 /* PlayerView.swift in Sources */,
+				467C7F7F225BB26C006F8455 /* TZAudioPlayer.swift in Sources */,
+				465EB3C3225E3A6700DE50E7 /* TZVideoPreviewPlayer.swift in Sources */,
+				467C7F78225B774D006F8455 /* AudioViewController.swift in Sources */,
+				467C7F7C225BACAA006F8455 /* TZRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 486WF39AWN;
 				INFOPLIST_FILE = AVFoundationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 486WF39AWN;
 				INFOPLIST_FILE = AVFoundationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
